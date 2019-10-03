@@ -1,18 +1,25 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-        <button type="button" class="btn btn-primary btn-block mb-3">Primary</button>
-        <button type="button" class="btn btn-secondary btn-block mb-3">Secondary</button>
-        <button type="button" class="btn btn-success btn-block mb-3">Success</button>
-        <button type="button" class="btn btn-danger btn-block mb-3">Danger</button>
-        <button type="button" class="btn btn-warning btn-block mb-3">Warning</button>
-        <button type="button" class="btn btn-info btn-block mb-3">Info</button>
-        <button type="button" class="btn btn-light btn-block mb-3">Light</button>
-        <button type="button" class="btn btn-dark btn-block mb-3">Dark</button>
-        </div>
+<div class='bgimg1'>
+  <div class="container d-flex justify-content-center">
+    <div class="card" style="width:600px">
+      <img class="card-img-top" src="{{url_for('static', filename='img_avatar1.png')}}" alt="Card image" style="width:50%">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-block mb-3"><i class="fab fa-facebook-square"></i><span>      </span>    Facebook</button>
+          <button type="button" class="btn btn-secondary btn-block mb-3"><i class="fab fa-instagram"></i><span>          </span>Instagram</button>
+          <button type="button" class="btn btn-info btn-block mb-3"><i class="fab fa-twitter-square"></i><span>          </span>Twitter</button>
+          <button type="button" class="btn btn-light btn-block mb-3"><i class="fab fa-linkedin"></i><span>               </span>LinkedIn</button>
+          <button type="button" class="btn btn-dark btn-block mb-3"><i class="fab fa-github-square"></i><span>           </span>GitHub</button>
+          </div>
+    </div>
+      </div>
+    </div>
+  <div class="container">
+      
   </div>
 </div>
 {% endblock %}
