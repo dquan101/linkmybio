@@ -6,16 +6,16 @@
     <div class="card" style="width:600px">
       <img class="card-img-top" src="{{url_for('static', filename='img_avatar1.png')}}" alt="Card image" style="width:50%">
       <div class="card-body">
-        <h4 class="card-title">John Doe</h4>
-        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <h4 class="card-title">{{links['name']}}</h4>
+        <p class="card-text">{{links['shortbio']}}</p>
         <div class="row">
-          <button type="button" class="btn btn-primary btn-block mb-3"><i class="fab fa-facebook-square"></i><span>      </span>    Facebook</button>
-          <button type="button" class="btn btn-secondary btn-block mb-3"><i class="fab fa-instagram"></i><span>          </span>Instagram</button>
-          <button type="button" class="btn btn-info btn-block mb-3"><i class="fab fa-twitter-square"></i><span>          </span>Twitter</button>
-          <button type="button" class="btn btn-light btn-block mb-3"><i class="fab fa-linkedin"></i><span>               </span>LinkedIn</button>
-          <button type="button" class="btn btn-dark btn-block mb-3"><i class="fab fa-github-square"></i><span>           </span>GitHub</button>
+         <a href="{{links['links'][0]['facebook']['link']}}" class='btn btn-primary btn-block mb-2'><i class="fab fa-facebook-square"></i><span>      </span>    Facebook</button></a>
+         <a href="{{links['links'][1]['instagram']['link']}}" class="btn btn-secondary btn-block mb-3"><i class="fab fa-instagram"></i><span>          </span>Instagram</button></a>
+         <a href="{{links['links'][1]['instagram']['link']}}" class="btn btn-info btn-block mb-3"><i class="fab fa-twitter"></i><span>          </span>Twitter</button></a>
+         <a href="{{links['links'][1]['instagram']['link']}}" class="btn btn-light btn-block mb-3"><i class="fab fa-linkedin"></i><span>          </span>LinkedIn</button></a>
+         <a href="{{links['links'][1]['instagram']['link']}}" class="btn btn-dark btn-block mb-3"><i class="fab fa-github"></i><span>          </span>GitHub</button></a>
           </div>
-    </div>
+    </div>  
       </div>
     </div>
   <div class="container">

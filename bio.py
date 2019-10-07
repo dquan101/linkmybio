@@ -9,7 +9,7 @@ with open('links.yaml') as f:
 
 @app.route("/bio")
 def home():
-    return render_template("bio.html")
+    return render_template("bio.html", links=links)
 
 if __name__ == "__main__":
     debug=True
