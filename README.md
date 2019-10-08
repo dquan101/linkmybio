@@ -89,11 +89,9 @@ See you can add any style to your own project. These are only ideas.
 
 
 # Usage
-{
->  RUN python bio.py
->  open your browser with "http://localhost:5000/"
->  Links and images should be displayed
-}
+
+>  RUN python bio.py. Open your browser with "http://localhost:5000/". Links and images should be displayed
+
 
 # Extras:
 - You can **add** any other attribute you like in order to add more functionalities.
