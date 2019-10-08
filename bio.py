@@ -7,9 +7,9 @@ environment = os.getenv("ENVIRONMENT", "development")
 with open('links.yaml') as f:
     links = yaml.load(f, Loader=yaml.FullLoader)
 
-@app.route("/bio")
+@app.route("/")
 def home():
-    return render_template("bio.html", links=links)
+    return render_template("index.html", links=links)
 
 if __name__ == "__main__":
     debug=True
